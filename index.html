@@ -98,10 +98,14 @@
      function popcl(){
          cat.id="p";
      }
+     <!--This will  delay a 1 sec before functioning popcl-->
+     function optimeDelay(){
+         setTimeout(popcl,70);
+     }
      document.addEventListener("keydown",popclick);
      document.addEventListener("pointerdown",popclick);
-     document.addEventListener("keyup",popcl);
-     document.addEventListener("pointerup",popcl);
+     document.addEventListener("keyup",optimeDelay);
+     document.addEventListener("pointerup",optimeDelay);
 
 
 
